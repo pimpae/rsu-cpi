@@ -86,7 +86,7 @@
                             </li>    
                              
                             <li class="nav-item">
-                                <a href="cooperation.html" class="nav-link active"> 
+                                <a href="cooperation.html" class="nav-link "> 
                                     <i class="nav-icon fas fa-hands-helping"></i>
                                     <p>กิจกรรมส่งเสริมศิลปวัฒนธรรม </p>
                                 </a>
@@ -103,7 +103,7 @@
                                     <p>ลิงก์กิจกรรมโซเชียล </p>
                                 </a>
                             </li>  
-                            <li class="nav-item">
+                            <li class="nav-item menu-is-opening menu-open">
                                 <a href="#" class="nav-link"> 
                                     <i class="nav-icon far fa-cog"></i>
                                     <p>
@@ -112,8 +112,8 @@
                                     </p>
                                 </a>
                                 <ul class="nav nav-treeview">
-                                    <li class="nav-item">
-                                        <a href="expertise-setting.html" class="nav-link">
+                                    <li class="nav-item  ">
+                                        <a href="expertise-setting.html" class="nav-link active">
                                             <i class="far fa-user-cog"></i>
                                             <p>จัดการจัดการบุคคลกรที่เกี่ยวข้อง</p>
                                         </a>
@@ -128,12 +128,15 @@
                 <div class="content-header">
                     <div class="container-fluid">
                         <div class="row mb-2">
-                            <div class="col-sm-6">
+                            <div class="col-12">
                                 <h1 class="m-0">
-                                    <b>กิจกรรมส่งเสริมศิลปวัฒนธรรม </b>
-                                    <!-- <a href="cooperation-create-form.html" class="btn btn-info ml-3 pt-2 btn-xs ">
-                                        <i class="fal fa-plus"></i> สร้างกิจกรรมที่มีการขอความร่วมมือ
-                                    </a> -->
+                                    <b>จัดการจัดการบุคคลกรที่เกี่ยวข้อง </b>
+                                    <a href="expertise-create-form.html" class="btn btn-info ml-3 pt-2 btn-xs ">
+                                        <i class="fas fa-plus"></i> เพิ่มบุคคลกรที่เกี่ยวข้อง
+                                    </a>
+                                    <a href="expertise-type.html" class="btn btn-primary ml-3 pt-2 btn-xs ">
+                                        <i class="fas fa-user-cog"></i> ตั้งค่าประเภทความชำนาญ
+                                    </a>
                                 </h1>
                             </div>  
                         </div> 
@@ -149,17 +152,26 @@
                                     <div class="col-12 search-label">
                                         <div class="row">
                                             <div class="col-xl-2">
-                                                <label for="">ชื่อกิจกรรม </label>
+                                                <label for="">รหัสนักศึกษา </label>
                                                 <input type="text" class="form-control"  >
                                             </div> 
                                             <div class="col-xl-2">
-                                                <label for="">วันที่สร้าง </label>
+                                                <label for="">ชื่อ-นามสกุล </label>
                                                 <input type="text" class="form-control"  >
-                                            </div>   
+                                            </div> 
                                             <div class="col-xl-2">
-                                                <label for="">หน่วยงานที่เกี่ยวข้อง</label>
+                                                <label for="">วันที่เพิ่ม</label>
                                                 <input type="text" class="form-control"  >
-                                            </div>  
+                                            </div>    
+                                            <div class="col-xl-2">
+                                                <label for="">ความชำนาญ</label>
+                                                <select class="selectpicker" title="ความชำนาญ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                    <option>ดนตรีไทย </option>
+                                                    <option>ร้องเพลง</option> 
+                                                    <option>นาฏศิลป์</option>  
+                                                    <option>ศิลปะการแสดง</option>  
+                                                </select>
+                                            </div> 
                                             <div class="col-xl-2"> 
                                                 <label class="col-12">&nbsp; </label>
                                                 <button href="#" class="btn btn-primary btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา
@@ -175,58 +187,92 @@
                                             <thead>
                                                 <tr>
                                                     <th>#</th> 
-                                                    <th>ชื่อกิจกรรม</th>  
-                                                    <th>หน่วยงานที่เกี่ยวข้อง </th>  
-                                                    <th>วันที่สร้าง</th>
-                                                    <th>วันที่จัดกิจกรรม</th>
-                                                    <th>งบประมาณในการขอความช่วยเหลือ</th>
-                                                    <th>สถานะ</th>
+                                                    <th>รหัสนักศึกษา </th>
+                                                    <th>ชื่อ-นามสกุล </th>
+                                                    <th>คณะ </th>  
+                                                    <th>สาขา</th>
+                                                    <th>เบอร์โทรติดต่อ</th>
+                                                    <th>อีเมล</th> 
+                                                    <th>ความชำนาญ</th> 
                                                     <th>&nbsp;</th>
                                                 </tr>
                                             </thead>
                                             <tbody>  
                                                 <tr> 
                                                     <td>1</td>
-                                                    <td>งานเข้าพรรษา</td> 
-                                                    <td>เทศบาลนครรังสิต</td>
-                                                    <td>09/01/2564</td> 
-                                                    <td>11/01/2564</td> 
-                                                    <td>4,000</td> 
-                                                    <td class="text-danger">รออนุมัติคำขอ </td> 
+                                                    <td>659930013</td>
+                                                    <td>อดิศร ศรีสุธรรม</td> 
+                                                    <td>คณะศิลปศาสตร์</td>
+                                                    <td>การดนตรี</td> 
+                                                    <td>093-383-3939</td> 
+                                                    <td>pimppae@hotmail.com</td>  
+                                                    <td>ดนตรีไทย</td> 
                                                     <td>
-                                                        <a href="cooperation-description1.html" class="btn btn-danger btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
+                                                        <a href="expertise-description.html" class="btn btn-danger btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
                                                             รายละเอียด
                                                         </a> 
                                                     </td>
-                                                </tr>    
+                                                </tr>         
                                                 <tr> 
                                                     <td>2</td>
-                                                    <td>งานเข้าพรรษา</td> 
-                                                    <td>เทศบาลนครรังสิต</td>
-                                                    <td>09/01/2564</td> 
-                                                    <td>11/01/2564</td> 
-                                                    <td>4,000</td> 
-                                                    <td class="text-success">เสร็จสิ้นกิจกรรม </td> 
+                                                    <td>659930013</td>
+                                                    <td>อดิศร ศรีสุธรรม</td> 
+                                                    <td>คณะศิลปศาสตร์</td>
+                                                    <td>การดนตรี</td> 
+                                                    <td>093-383-3939</td> 
+                                                    <td>pimppae@hotmail.com</td>  
+                                                    <td>ร้องเพลง</td> 
                                                     <td>
-                                                        <a href="cooperation-description2.html" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
+                                                        <a href="expertise-description.html" class="btn btn-danger btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
                                                             รายละเอียด
                                                         </a> 
                                                     </td>
-                                                </tr> 
+                                                </tr>   
                                                 <tr> 
                                                     <td>3</td>
-                                                    <td>งานเข้าพรรษา</td> 
-                                                    <td>เทศบาลนครรังสิต</td>
-                                                    <td>09/01/2564</td> 
-                                                    <td>11/01/2564</td> 
-                                                    <td>4,000</td> 
-                                                    <td class="text-primary">อนุมัติคำขอ </td> 
+                                                    <td>659930013</td>
+                                                    <td>อดิศร ศรีสุธรรม</td> 
+                                                    <td>คณะศิลปศาสตร์</td>
+                                                    <td>การดนตรี</td> 
+                                                    <td>093-383-3939</td> 
+                                                    <td>pimppae@hotmail.com</td>  
+                                                    <td>นาฏศิลป์</td> 
                                                     <td>
-                                                        <a href="cooperation-description3.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
+                                                        <a href="expertise-description.html" class="btn btn-danger btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
                                                             รายละเอียด
                                                         </a> 
                                                     </td>
-                                                </tr>                                    
+                                                </tr>   
+                                                <tr> 
+                                                    <td>4</td>
+                                                    <td>659930013</td>
+                                                    <td>อดิศร ศรีสุธรรม</td> 
+                                                    <td>คณะศิลปศาสตร์</td>
+                                                    <td>การดนตรี</td> 
+                                                    <td>093-383-3939</td> 
+                                                    <td>pimppae@hotmail.com</td>  
+                                                    <td>ศิลปะการแสดง</td> 
+                                                    <td>
+                                                        <a href="expertise-description.html" class="btn btn-danger btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
+                                                            รายละเอียด
+                                                        </a> 
+                                                    </td>
+                                                </tr>     
+                                                <tr> 
+                                                    <td>5</td>
+                                                    <td>659930013</td>
+                                                    <td>อดิศร ศรีสุธรรม</td> 
+                                                    <td>คณะศิลปศาสตร์</td>
+                                                    <td>การดนตรี</td> 
+                                                    <td>093-383-3939</td> 
+                                                    <td>pimppae@hotmail.com</td>  
+                                                    <td>ดนตรีไทย</td> 
+                                                    <td>
+                                                        <a href="expertise-description.html" class="btn btn-danger btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
+                                                            รายละเอียด
+                                                        </a> 
+                                                    </td>
+                                                </tr>                            
                                             </tbody> 
                                         </table>
                                     </div>
