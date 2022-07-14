@@ -248,3 +248,42 @@ input:not(:focus):valid ~ .floating-label{
 [class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active, [class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active:focus, [class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active:hover{
   color:#EA4C92;
 }
+
+
+.tb-div-list{
+  max-height: 500px;
+  padding: 0px;
+  overflow-y: auto;
+  border: 1px solid #D4D8DC;
+  border-radius: 6px;
+}
+.tb-div-list table{
+  text-align: left;
+  position: relative;
+  border-collapse: collapse; 
+} 
+.tb-div-list th {
+  background: white;
+  position: sticky;
+  top: 0; 
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+
+
+.tb-div-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.tb-div-list::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.tb-div-list::-webkit-scrollbar-thumb {
+  background: #D4D8DC; 
+  border-radius: 6px;
+} 
+.tb-div-list::-webkit-scrollbar-thumb:hover {
+  background: #ced4da; 
+}

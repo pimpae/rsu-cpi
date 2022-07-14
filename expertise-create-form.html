@@ -160,68 +160,94 @@
                             <div class="col">
                                 <div class="row justify-content-center"> 
                                     <div class="col-xl-10 col-12">
+                                        
                                         <form action="">
+
+                                            <div class="form-group row">
+                                                <div class="col-lg-3">&nbsp;</div>
+                                                <div class="col-lg-8"> 
+                                                    <div class="form-check-inline">
+                                                        <label class="form-check-label">
+                                                        <input 
+                                                            type="radio" 
+                                                            class="form-check-input" 
+                                                            name="status"
+                                                            value="2" 
+                                                            >บุคลากร ม.รังสิต
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check-inline disabled">
+                                                        <label class="form-check-label">
+                                                        <input 
+                                                            type="radio" 
+                                                            class="form-check-input" 
+                                                            name="status"
+                                                            value="3" 
+                                                            >นักศึกษา ม.รังสิต
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
                                             <div class="form-group row">
                                                 <div class="col-xl-3">
-                                                    <label for="">รหัสนักศึกษา</label> 
+                                                    <label for="">รหัสนักศึกษา / บุคลากร</label> 
                                                 </div>  
                                                 <div class="col-xl-4"> 
-                                                    <input type="text" class="form-control" name="staff_id"  placeholder="ค้นหาจากรหัสนักศึกษา" >
+                                                    <input 
+                                                        type="text" 
+                                                        class="form-control" 
+                                                        id="staff_id"
+                                                        name="staff_id" 
+                                                        >
                                                 </div> 
                                                 <div class="col-xl-2"> 
-                                                    <a href="#" class="btn btn-success btn-block getda" ><i class="fas fa-sync mb-x"></i> นำเข้าข้อมูล</a>
+                                                    <a href="#" class="btn btn-success getda" ><i class="fas fa-sync mb-x"></i> นำเข้าข้อมูล</a>
                                                 </div> 
                                             </div> 
                                             <div class="formx1">
-                                                <div class="form-group row">
+                                                <div class="form-group row mb-0">
                                                     <div class="col-xl-3">
                                                         <label for="">ชื่อ-นามสกุล</label> 
                                                     </div>  
                                                     <div class="col-xl-6"> 
-                                                        <input type="text" class="form-control"  disabled  name="full_name">
+                                                        <label for="">อดิศร ศรีสุธรรม</label> 
                                                     </div>  
-                                                </div> 
-                                                <div class="form-group row">
-                                                    <div class="col-xl-3">
-                                                        <label for="">ปีการศึกษา</label> 
-                                                    </div>  
-                                                    <div class="col-xl-6"> 
-                                                        <input type="text" class="form-control"  disabled name="year">
-                                                    </div>  
-                                                </div> 
-                                                <div class="form-group row">
+                                                </div>  
+                                                <div class="form-group row mb-0">
                                                     <div class="col-xl-3">
                                                         <label for="">คณะ</label> 
                                                     </div>  
                                                     <div class="col-xl-6"> 
-                                                        <input type="text" class="form-control"  disabled name="group">
+                                                        <label for="">วิทยาลัยการดนตรี</label> 
                                                     </div>  
                                                 </div>  
                                                 
-                                                <div class="form-group row">
+                                                <div class="form-group row mb-0">
                                                     <div class="col-xl-3">
                                                         <label for="">สาขา</label> 
                                                     </div>  
                                                     <div class="col-xl-6"> 
-                                                        <input type="text" class="form-control"  disabled name="branch" >
+                                                        <label for="">ดนตรีสากล</label> 
                                                     </div> 
                                                 </div>   
                                                 
-                                                <div class="form-group row">
+                                                <div class="form-group row mb-0">
                                                     <div class="col-xl-3">
                                                         <label for="">อีเมล</label> 
                                                     </div>  
                                                     <div class="col-xl-6"> 
-                                                        <input type="text" class="form-control"  disabled name="email" >
+                                                        <label for="">adisorn@rsu.ac.th</label> 
                                                     </div> 
                                                 </div>  
                                                 
-                                                <div class="form-group row">
+                                                <div class="form-group row mb-0">
                                                     <div class="col-xl-3">
                                                         <label for="">เบอร์โทร</label> 
                                                     </div>  
                                                     <div class="col-xl-6"> 
-                                                        <input type="text" class="form-control"  disabled name="tel" >
+                                                        <label for="">093-383-3838</label> 
                                                     </div> 
                                                 </div>   
                                                 <div class="form-group row">
@@ -338,6 +364,9 @@
 
  
             });
+
+    
+
         </script>
 
 
